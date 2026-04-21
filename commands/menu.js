@@ -30,7 +30,7 @@ function getCategoryIcon(category) {
   if (c === "owner") return "✨";
   if (c === "creator") return "👑";
 
-  return "🎯"; 
+  return "🌹"; 
 }
 
 
