@@ -104,7 +104,7 @@ export default async function info(client, message) {
     menu += `
 
 ╭───────────────────❖───────────────────╮
- voir la chaîne 
+  https://whatsapp.com/channel/0029VbCYwpk5vKA2VG7qos02
 ╰───────────────────❖───────────────────╯
 `;
 
