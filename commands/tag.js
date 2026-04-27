@@ -75,7 +75,7 @@ export async function tag(client, message) {
         const messageBody = message.message?.conversation || message.message?.extendedTextMessage?.text || ""
         const commandAndArgs = messageBody.slice(1).trim()
         const parts = commandAndArgs.split(/\s+/)
-        const text = parts.slice(1).join(' ') || 'Digital Crew Alert'
+        const text = parts.slice(1).join(' ') || 'WENS GIVEAWAY'
 
         const quotedMessage = message.message?.extendedTextMessage?.contextInfo?.quotedMessage
         if (quotedMessage) {
