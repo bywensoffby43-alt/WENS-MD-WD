@@ -4,11 +4,11 @@ export default async function bb(client, message) {
 
         "",
 
-        "> *OUI LOSER 🐸*",
+        "> *YE BRO SAK PASE 😒*",
 
-        "> *YO QUOO DE NEUF 🍉*",
+        "> *YOW OU BIEN 😅*",
 
-        "> *OUI PERVERS 🍒*"
+        "> *BYE BRO 👨‍🦯*"
 
     ];
 
