@@ -1,6 +1,6 @@
 {
   "name": "WENS-MD-WD",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "WENS DM WhatsApp Bot — a powerful, fun and intelligent bot packed with extra features, AI capabilities and a sleek futuristic design",
   "main": "index.js",
   "type": "module",
