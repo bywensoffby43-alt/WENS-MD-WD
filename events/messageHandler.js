@@ -28,7 +28,6 @@ import info from "../commands/menu.js"
 import { pingTest } from "../commands/ping.js"
 import auto from '../commands/auto.js'
 import uptime from '../commands/uptime.js'
-import iaCommand, { iaImage } from '../commands/ia.js'
 import gpt from '../commands/gpt.js'
 import insult from '../commands/insult.js'
 import chr from '../commands/chr.js'
@@ -51,12 +50,11 @@ import translate from '../commands/translate.js'
 import fact from '../commands/fact.js'
 import antilinkkick, { detectLink } from '../commands/antilinkkick.js'
 import anime from '../commands/anime.js'
-import spam from '../commands/spam.js'
-import actifCommand from '../commands/actif.js'
+import spam from '../commands/spam.j'
 import inactifCommand from '../commands/inactif.js'
 import rankCommand from '../commands/rank.js'
 import darkGPTCommand from '../commands/darkgpt.js'
-import goldenCommand, { goldenClear } from '../commands/golden.js'
+import wens from '../commands/wens.js'
 import horoscope from '../commands/horoscope.js'
 import hackCommand from '../commands/hack.js'
 import groupinfo from '../commands/groupinfo.js'
@@ -64,7 +62,6 @@ import qrCommand from '../commands/qr.js'
 import bonkCommand from '../commands/bonk.js'
 import danserCommand from '../commands/danser.js'
 import quizCommand, { quizJoin, checkQuizAnswer } from '../commands/quiz.js'
-import { incrementMessageCount } from '../utils/messageCounter.js'
 import bomb from '../commands/bomb.js'
 import compressCommand from '../commands/compress.js'
 import chatbotCommand, { handleAutoReply } from '../commands/chatbot.js'
@@ -214,11 +211,6 @@ async function handleIncomingMessage(client, event) {
                       await sessionsCommands(client, message)
                       break
                     
-               case 'ai': // @cat: ia
-                    await react(client, message)        
-                    await iaCommand(client, message)
-                    break
-                    
                case 'iaimage': // @cat: ia
                      await react(client, message)
                      await iaImage(client, message)
@@ -244,14 +236,14 @@ async function handleIncomingMessage(client, event) {
                     await darkGPTCommand(client, message)
                     break
                     
-               case 'golden': // @cat: ia
+               case 'wens': // @cat: ia
                     await react(client, message)
-                    await goldenCommand(client, message)
+                    await wens(client, message)
                     break
                     
-               case 'goldenclear': // @cat: ia
+               case 'wens': // @cat: ia
                     await react(client, message)
-                    await goldenClear(client, message)
+                    await wens(client, message)
                     break
                     
                case 'insult': // @cat: fun
@@ -392,12 +384,6 @@ async function handleIncomingMessage(client, event) {
                case 'chat': // @cat: ia
                      await react(client, message)
                      await chatbotCommand(client, message)
-                     break
-               
-               case 'actif': // @cat: group
-               case 'top': // @cat: group
-                     await react(client, message)
-                     await actifCommand(client, message)
                      break
                      
                case 'inactif': // @cat: group
