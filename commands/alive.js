@@ -19,7 +19,7 @@ export default async function aliveCommand(client, message) {
 ━━━━━━━━━━━━━━━
 
 📌 *Statut :* 🟢 En ligne
-📦 *Version :* 1.0.0
+📦 *Version :* 2.0.0
 👑 *Créateur :* The GoldenBoy
 
 ━━━━━━━━━━━━━━━
